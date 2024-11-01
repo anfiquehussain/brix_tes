@@ -1,0 +1,19 @@
+
+/* For Chrome, Safari, and Edge */
+::-webkit-scrollbar {
+    width: 0; /* Width of the vertical scrollbar */
+    height: 1px; /* Height of the horizontal scrollbar */
+    display: none;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00A651; /* Color of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00A651; /* Color of the thumb on hover */
+}
