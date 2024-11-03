@@ -78,7 +78,7 @@ function Navbar() {
                         </div>
                         <div className='flex items-center space-x-1'>
                             <FaRegUser className="text-gray-700" />
-                            {renderNavigationLink("/sign-in", "Sign In / Sign Up")}
+                            {renderNavigationLink("/login", "Sign In / Sign Up")}
                         </div>
                     </div>
 
@@ -108,7 +108,7 @@ function Navbar() {
                         </div>
                         <div className='flex items-center space-x-1'>
                             <FaRegUser className="text-gray-700" />
-                            {renderNavigationLink("/sign-in", "Sign In / Sign Up")}
+                            {renderNavigationLink("/login", "Sign In / Sign Up")}
                         </div>
                     </div>
                 </div>

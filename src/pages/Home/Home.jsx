@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
-import HomeCorasual from "../../components/Home/HomeCorasual/HomeCorasual";
+import HomeCarousel from "../../components/Home/HomeCarousel/HomeCarousel";
 import SearchNav from "../../components/Home/SearchNav/SearchNav";
 import CircleCard from "../../components/Home/CircleCard/CircleCard";
 import SquareImageCard from "../../components/Home/SquareImageCard/SquareImageCard";
@@ -8,8 +8,8 @@ import ProductCard from "../../components/Home/ProductCard/ProductCard";
 import ProductCardLarge from "../../components/Home/ProductCardLarge/ProductCardLarge";
 import BannerHire from "../../components/Home/BannerHire/BannerHire";
 import ImageBanner from "../../components/Home/ImageBanner/ImageBanner";
-import BannerBank from "../../components/Home/Banner_bank/BannerBank";
 import Footer from "../../components/Footer/Footer";
+import HomeCarousel2 from "../../components/Home/HomeCarousel2/HomeCarousel2";
 
 function Home() {
   const [categories, setCategories] = useState([
@@ -142,10 +142,9 @@ function Home() {
 
 
   return (
-    <div>
-      <Navbar />
+    <>
       <SearchNav />
-      <HomeCorasual />
+      <HomeCarousel />
       <CircleCard data={categories} bg="bg-blue-300" title="Categories" />
       <CircleCard data={trendingBrands} bg="bg-white" title="Trending Brands" />
       <SquareImageCard data={nearestBrand} title="Nearest Suppliers" bg="bg-blue-300" />
@@ -155,8 +154,7 @@ function Home() {
       <ProductCard products={products} title="Today’s Special Offer" bg="#FFDCA8" />
       <ImageBanner img="\images\banner_images\full_banner.png"/>
       <ProductCard products={products} title="Fast Moving Items" bg="#FFFFFF"/>
-      {/* corosual */}
-      <BannerBank/>
+      <HomeCarousel2/>
       <div className="flex flex-col md:flex-row items-center justify-between bg-brand-primary p-4 md:p-6">
         <p className="text-white uppercase font-semibold text-center md:text-left mb-2 md:mb-0">
           Looking for a contractor for your next project?
@@ -165,9 +163,7 @@ function Home() {
           Subscribe Now
         </button>
       </div>
-
-      <Footer />
-    </div>
+    </>
   );
 }
 
